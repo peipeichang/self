@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/quantum-cumputing-learnings",
+      "handler": "quantum-cumputing-learning.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/quantum-cumputing-learnings/count",
+      "handler": "quantum-cumputing-learning.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/quantum-cumputing-learnings/:id",
+      "handler": "quantum-cumputing-learning.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/quantum-cumputing-learnings",
+      "handler": "quantum-cumputing-learning.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/quantum-cumputing-learnings/:id",
+      "handler": "quantum-cumputing-learning.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/quantum-cumputing-learnings/:id",
+      "handler": "quantum-cumputing-learning.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

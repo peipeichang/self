@@ -1,0 +1,23 @@
+{
+  "kind": "collectionType",
+  "collectionName": "news_displays",
+  "info": {
+    "name": "newsDisplay",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "news": {
+      "collection": "new",
+      "via": "news_displays",
+      "dominant": true
+    },
+    "Name": {
+      "type": "string"
+    }
+  }
+}

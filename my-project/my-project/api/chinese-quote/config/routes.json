@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/chinese-quotes",
+      "handler": "chinese-quote.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/chinese-quotes/count",
+      "handler": "chinese-quote.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/chinese-quotes/:id",
+      "handler": "chinese-quote.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/chinese-quotes",
+      "handler": "chinese-quote.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/chinese-quotes/:id",
+      "handler": "chinese-quote.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/chinese-quotes/:id",
+      "handler": "chinese-quote.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

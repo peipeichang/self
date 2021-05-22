@@ -1,0 +1,26 @@
+{
+  "kind": "collectionType",
+  "collectionName": "quotes",
+  "info": {
+    "name": "quote",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "p1": {
+      "type": "text",
+      "default": "If people do not believe that mathematics is simple, it is only because they do not realize how complicated life is."
+    },
+    "author": {
+      "type": "string",
+      "default": "John von Neumann"
+    },
+    "p2": {
+      "type": "text"
+    }
+  }
+}

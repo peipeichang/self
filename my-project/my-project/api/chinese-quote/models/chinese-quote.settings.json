@@ -1,0 +1,24 @@
+{
+  "kind": "collectionType",
+  "collectionName": "chinese_quotes",
+  "info": {
+    "name": "chineseQuote",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "author": {
+      "type": "string"
+    },
+    "p1": {
+      "type": "string"
+    },
+    "p2": {
+      "type": "string"
+    }
+  }
+}

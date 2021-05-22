@@ -1,0 +1,49 @@
+{
+  "kind": "collectionType",
+  "collectionName": "news",
+  "info": {
+    "name": "new",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "discribe": {
+      "type": "richtext"
+    },
+    "news_classes": {
+      "collection": "news-class",
+      "via": "news"
+    },
+    "profile": {
+      "type": "richtext",
+      "default": "一章 總則 第 一 條 本會名稱為台灣量子電腦暨資訊科技協會，英文譯名為Taiwan Association of Quantum Computation and Information Technology （以下簡稱本會）。"
+    },
+    "date": {
+      "type": "datetime"
+    },
+    "photo": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false
+    },
+    "news_displays": {
+      "via": "news",
+      "collection": "news-display"
+    }
+  }
+}

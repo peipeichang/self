@@ -1,0 +1,23 @@
+{
+  "kind": "collectionType",
+  "collectionName": "yeses",
+  "info": {
+    "name": "yes"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "author": {
+      "type": "string"
+    },
+    "pq": {
+      "type": "string"
+    },
+    "p2": {
+      "type": "string"
+    }
+  }
+}

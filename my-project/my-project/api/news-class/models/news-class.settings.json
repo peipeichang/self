@@ -1,0 +1,22 @@
+{
+  "kind": "collectionType",
+  "collectionName": "news_classes",
+  "info": {
+    "name": "news_class"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "news": {
+      "via": "news_classes",
+      "collection": "new",
+      "dominant": true
+    },
+    "category": {
+      "type": "string"
+    }
+  }
+}

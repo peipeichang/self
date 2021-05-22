@@ -1,0 +1,32 @@
+{
+  "kind": "collectionType",
+  "collectionName": "quantum_computing_programs",
+  "info": {
+    "name": "Quantum-computing-program",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "discribe": {
+      "type": "string"
+    },
+    "photo": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false
+    },
+    "link": {
+      "type": "string"
+    }
+  }
+}

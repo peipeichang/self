@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/quantum-computing-programs",
+      "handler": "quantum-computing-program.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/quantum-computing-programs/count",
+      "handler": "quantum-computing-program.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/quantum-computing-programs/:id",
+      "handler": "quantum-computing-program.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/quantum-computing-programs",
+      "handler": "quantum-computing-program.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/quantum-computing-programs/:id",
+      "handler": "quantum-computing-program.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/quantum-computing-programs/:id",
+      "handler": "quantum-computing-program.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}
