@@ -22,7 +22,7 @@ module.exports = function (api) {
 
 
   api.loadSource(async actions => {
-    const { data } = await axios.get('http://localhost:1337/news')
+    const { data } = await axios.get(process.env.GRIDSOME_API_URL/+"news")
 
     const collection = actions.addCollection({
       typeName: 'News',

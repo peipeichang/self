@@ -6,13 +6,13 @@
 
 module.exports = {
   siteName: 'Gridsome',
-  siteUrl: 'https://github.com/peipeichang/self.git',
+  
   
   plugins: [
     {
       use: '@gridsome/source-strapi',
       options: {
-        apiURL:  process.env.GRIDSOME_API_URL,
+        apiURL: process.env.GRIDSOME_API_URL,
         queryLimit: 1000, // Defaults to 100
         contentTypes: [ `member`, 
         `center-introduction`,`chair`,`quote`,
